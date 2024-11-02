@@ -207,21 +207,16 @@ class Http
      */
     protected function assessRequestAttempt(?Response $response = null)
     {
-        switch ($this->preferredRequestScheme) {
-            case OAuth::REQUEST_SCHEME_HEADER:
-                $this->preferredRequestScheme = OAuth::REQUEST_SCHEME_POSTBODY;
-                break;
-            case OAuth::REQUEST_SCHEME_POSTBODY:
-                $this->preferredRequestScheme = OAuth::REQUEST_SCHEME_QUERYSTRING;
-                break;
-            default:
-                throw new Exception\RuntimeException(
-                    'Could not retrieve a valid Token response from Token URL:'
-                    . ($response !== null
-                        ? PHP_EOL . $response->getBody()
-                        : ' No body - check for headers')
-                );
-        }
+        $this->preferredRequestScheme = match ($this->preferredRequestScheme) {
+            OAuth::REQUEST_SCHEME_HEADER => OAuth::REQUEST_SCHEME_POSTBODY,
+            OAuth::REQUEST_SCHEME_POSTBODY => OAuth::REQUEST_SCHEME_QUERYSTRING,
+            default => throw new Exception\RuntimeException(
+                'Could not retrieve a valid Token response from Token URL:'
+                . ($response !== null
+                    ? PHP_EOL . $response->getBody()
+                    : ' No body - check for headers')
+            ),
+        };
     }
 
     /**

@@ -149,10 +149,7 @@ abstract class AbstractToken implements TokenInterface
      */
     public function getParam($key)
     {
-        if (isset($this->params[$key])) {
-            return $this->params[$key];
-        }
-        return null;
+        return $this->params[$key] ?? null;
     }
 
     /**
@@ -213,10 +210,8 @@ abstract class AbstractToken implements TokenInterface
     /**
      * Convert Token to a string, specifically a raw encoded query string.
      * Aliases to self::toString()
-     *
-     * @return string
      */
-    public function __toString()
+    public function __toString(): string
     {
         return $this->toString();
     }

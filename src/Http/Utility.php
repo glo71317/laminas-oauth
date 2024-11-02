@@ -9,8 +9,9 @@ use function count;
 use function explode;
 use function implode;
 use function md5;
+use function mt_getrandmax;
 use function preg_match;
-use function rand;
+use function random_int;
 use function rawurldecode;
 use function rawurlencode;
 use function str_replace;
@@ -179,7 +180,7 @@ class Utility
      */
     public function generateNonce()
     {
-        return md5(uniqid(rand(), true));
+        return md5(uniqid(random_int(0, mt_getrandmax()), true));
     }
 
     /**
