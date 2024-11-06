@@ -2,6 +2,7 @@
     "name": "laminas/laminas-oauth",
     "description": " ",
     "license": "BSD-3-Clause",
+    "abandoned": true,
     "keywords": [
         "laminas",
         "oauth"
