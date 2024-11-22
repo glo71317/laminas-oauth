@@ -136,6 +136,7 @@
                     "type": "community_bridge"
                 }
             ],
+            "abandoned": true,
             "time": "2023-11-06T23:02:42+00:00"
         },
         {
