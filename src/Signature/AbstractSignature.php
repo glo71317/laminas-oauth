@@ -30,13 +30,6 @@ abstract class AbstractSignature implements SignatureInterface
     protected $key;
 
     /**
-     * Consumer secret
-     *
-     * @var string
-     */
-    protected $consumerSecret;
-
-    /**
      * Token secret
      *
      * @var string
@@ -51,9 +44,14 @@ abstract class AbstractSignature implements SignatureInterface
      * @param  null|string $hashAlgo
      * @return void
      */
-    public function __construct($consumerSecret, $tokenSecret = null, $hashAlgo = null)
-    {
-        $this->consumerSecret = $consumerSecret;
+    public function __construct(
+        /**
+         * Consumer secret
+         */
+        protected $consumerSecret,
+        $tokenSecret = null,
+        $hashAlgo = null
+    ) {
         if (isset($tokenSecret)) {
             $this->tokenSecret = $tokenSecret;
         }
