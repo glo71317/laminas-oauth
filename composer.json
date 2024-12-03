@@ -24,10 +24,16 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
+    "repositories": [
+        {
+            "type" : "vcs",
+            "url" : "git@github.com:glo71317/laminas-crypt.git"
+        }
+    ],
     "require": {
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
         "laminas/laminas-config": "^3.7",
-        "laminas/laminas-crypt": "^3.6.0",
+        "laminas/laminas-crypt": "dev-php8.4_support",
         "laminas/laminas-http": "^2.15",
         "laminas/laminas-i18n": "^2.13.0",
         "laminas/laminas-loader": "^2.8",
