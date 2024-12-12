@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad2b23fcdd361d49a487d9c08eadaade",
+    "content-hash": "e1fcaa9c1b0046a4bd6ffc89a8c5ed28",
     "packages": [
         {
             "name": "laminas/laminas-config",
@@ -77,16 +77,16 @@
         },
         {
             "name": "laminas/laminas-crypt",
-            "version": "dev-php8.4_support",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/glo71317/laminas-crypt.git",
-                "reference": "c5e2ebc5e76bf3868f0d105da0f2facd800db83e"
+                "url": "git@github.com:magento-commerce/laminas-crypt.git",
+                "reference": "c4657a2fc3445ea20179ab4bf5cbdb4465dd031b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/glo71317/laminas-crypt/zipball/c5e2ebc5e76bf3868f0d105da0f2facd800db83e",
-                "reference": "c5e2ebc5e76bf3868f0d105da0f2facd800db83e",
+                "url": "https://api.github.com/repos/magento-commerce/laminas-crypt/zipball/c4657a2fc3445ea20179ab4bf5cbdb4465dd031b",
+                "reference": "c4657a2fc3445ea20179ab4bf5cbdb4465dd031b",
                 "shasum": ""
             },
             "require": {
@@ -106,6 +106,7 @@
             "suggest": {
                 "ext-openssl": "Required for most features of Laminas\\Crypt"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -156,7 +157,7 @@
                 "forum": "https://discourse.laminas.dev"
             },
             "abandoned": true,
-            "time": "2024-12-10T09:57:58+00:00"
+            "time": "2024-12-11T12:07:45+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
