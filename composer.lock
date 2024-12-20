@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1fcaa9c1b0046a4bd6ffc89a8c5ed28",
+    "content-hash": "78fd1157055c4af0b097d990fac8ac91",
     "packages": [
         {
             "name": "laminas/laminas-config",
@@ -76,101 +76,17 @@
             "time": "2024-12-05T14:32:05+00:00"
         },
         {
-            "name": "laminas/laminas-crypt",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:magento-commerce/laminas-crypt.git",
-                "reference": "c4657a2fc3445ea20179ab4bf5cbdb4465dd031b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/magento-commerce/laminas-crypt/zipball/c4657a2fc3445ea20179ab4bf5cbdb4465dd031b",
-                "reference": "c4657a2fc3445ea20179ab4bf5cbdb4465dd031b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "laminas/laminas-math": "^3.8",
-                "laminas/laminas-stdlib": "^3.8",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
-                "psr/container": "^1.1 || ^2.0"
-            },
-            "conflict": {
-                "zendframework/zend-crypt": "*"
-            },
-            "require-dev": {
-                "laminas/laminas-coding-standard": "~2.5.0",
-                "phpunit/phpunit": "^10.1"
-            },
-            "suggest": {
-                "ext-openssl": "Required for most features of Laminas\\Crypt"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Laminas\\Crypt\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "files": [
-                    "test/_autoload.php"
-                ],
-                "psr-4": {
-                    "LaminasTest\\Crypt\\": "test/"
-                }
-            },
-            "scripts": {
-                "check": [
-                    "@cs-check",
-                    "@test"
-                ],
-                "cs-check": [
-                    "phpcs"
-                ],
-                "cs-fix": [
-                    "phpcbf"
-                ],
-                "test": [
-                    "phpunit --colors=always"
-                ],
-                "test-coverage": [
-                    "phpunit --colors=always --coverage-clover clover.xml"
-                ]
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Strong cryptography tools and password hashing",
-            "homepage": "https://laminas.dev",
-            "keywords": [
-                "crypt",
-                "laminas"
-            ],
-            "support": {
-                "docs": "https://docs.laminas.dev/laminas-crypt/",
-                "issues": "https://github.com/laminas/laminas-crypt/issues",
-                "source": "https://github.com/laminas/laminas-crypt",
-                "rss": "https://github.com/laminas/laminas-crypt/releases.atom",
-                "chat": "https://laminas.dev/chat",
-                "forum": "https://discourse.laminas.dev"
-            },
-            "abandoned": true,
-            "time": "2024-12-11T12:07:45+00:00"
-        },
-        {
             "name": "laminas/laminas-escaper",
-            "version": "2.14.0",
+            "version": "2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "0f7cb975f4443cf22f33408925c231225cfba8cb"
+                "reference": "c612b0488ae486284c39885efca494c180f16351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/0f7cb975f4443cf22f33408925c231225cfba8cb",
-                "reference": "0f7cb975f4443cf22f33408925c231225cfba8cb",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/c612b0488ae486284c39885efca494c180f16351",
+                "reference": "c612b0488ae486284c39885efca494c180f16351",
                 "shasum": ""
             },
             "require": {
@@ -182,12 +98,12 @@
                 "zendframework/zend-escaper": "*"
             },
             "require-dev": {
-                "infection/infection": "^0.27.9",
-                "laminas/laminas-coding-standard": "~3.0.0",
+                "infection/infection": "^0.27.11",
+                "laminas/laminas-coding-standard": "~3.0.1",
                 "maglnet/composer-require-checker": "^3.8.0",
-                "phpunit/phpunit": "^9.6.16",
+                "phpunit/phpunit": "^9.6.22",
                 "psalm/plugin-phpunit": "^0.19.0",
-                "vimeo/psalm": "^5.21.1"
+                "vimeo/psalm": "^5.26.1"
             },
             "type": "library",
             "autoload": {
@@ -219,7 +135,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2024-10-24T10:12:53+00:00"
+            "time": "2024-12-17T19:39:54+00:00"
         },
         {
             "name": "laminas/laminas-http",
@@ -840,6 +756,93 @@
                 }
             ],
             "time": "2024-11-26T21:29:17+00:00"
+        },
+        {
+            "name": "magento/laminas-crypt",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magento-commerce/laminas-crypt.git",
+                "reference": "9e01f67bdab53cdf4439bf399e5a8ce0a47710ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magento-commerce/laminas-crypt/zipball/9e01f67bdab53cdf4439bf399e5a8ce0a47710ba",
+                "reference": "9e01f67bdab53cdf4439bf399e5a8ce0a47710ba",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "laminas/laminas-math": "^3.8",
+                "laminas/laminas-stdlib": "^3.8",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
+                "psr/container": "^1.1 || ^2.0"
+            },
+            "conflict": {
+                "zendframework/zend-crypt": "*"
+            },
+            "replace": {
+                "laminas/laminas-crypt": "^3.6"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~2.5.0",
+                "phpunit/phpunit": "^10.1"
+            },
+            "suggest": {
+                "ext-openssl": "Required for most features of Laminas\\Crypt"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Crypt\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "files": [
+                    "test/_autoload.php"
+                ],
+                "psr-4": {
+                    "LaminasTest\\Crypt\\": "test/"
+                }
+            },
+            "scripts": {
+                "check": [
+                    "@cs-check",
+                    "@test"
+                ],
+                "cs-check": [
+                    "phpcs"
+                ],
+                "cs-fix": [
+                    "phpcbf"
+                ],
+                "test": [
+                    "phpunit --colors=always"
+                ],
+                "test-coverage": [
+                    "phpunit --colors=always --coverage-clover clover.xml"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Strong cryptography tools and password hashing",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "crypt",
+                "laminas"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-crypt/",
+                "issues": "https://github.com/laminas/laminas-crypt/issues",
+                "source": "https://github.com/laminas/laminas-crypt",
+                "rss": "https://github.com/laminas/laminas-crypt/releases.atom",
+                "chat": "https://laminas.dev/chat",
+                "forum": "https://discourse.laminas.dev"
+            },
+            "abandoned": true,
+            "time": "2024-12-20T11:23:12+00:00"
         },
         {
             "name": "psr/container",
@@ -2873,16 +2876,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.11.1",
+            "version": "3.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "19473c30efe4f7b3cd42522d0b2e6e7f243c6f87"
+                "reference": "1368f4a58c3c52114b86b1abe8f4098869cb0079"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/19473c30efe4f7b3cd42522d0b2e6e7f243c6f87",
-                "reference": "19473c30efe4f7b3cd42522d0b2e6e7f243c6f87",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/1368f4a58c3c52114b86b1abe8f4098869cb0079",
+                "reference": "1368f4a58c3c52114b86b1abe8f4098869cb0079",
                 "shasum": ""
             },
             "require": {
@@ -2949,7 +2952,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-11-16T12:02:36+00:00"
+            "time": "2024-12-11T16:04:26+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -3060,7 +3063,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "laminas/laminas-crypt": 20
+        "magento/laminas-crypt": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -1,5 +1,5 @@
 {
-    "name": "laminas/laminas-oauth",
+    "name": "magento/laminas-oauth",
     "description": " ",
     "license": "BSD-3-Clause",
     "abandoned": true,
@@ -33,7 +33,7 @@
     "require": {
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
         "laminas/laminas-config": "^3.7",
-        "laminas/laminas-crypt": "dev-develop",
+        "magento/laminas-crypt": "dev-develop",
         "laminas/laminas-http": "^2.15",
         "laminas/laminas-i18n": "^2.13.0",
         "laminas/laminas-loader": "^2.8",
@@ -44,6 +44,9 @@
     "require-dev": {
         "laminas/laminas-coding-standard": "~2.5.0",
         "phpunit/phpunit": "^9.6.20"
+    },
+    "replace": {
+        "laminas/laminas-oauth": "^2.7"
     },
     "autoload": {
         "psr-4": {
